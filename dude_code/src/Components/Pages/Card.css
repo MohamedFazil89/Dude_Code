@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+.features-section {
+    color: white;
+    /* padding: 4rem 1.5rem; */
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.features-title {
+    font-size: 2rem;
+    font-weight: bold;
+    /* margin-bottom: 2.5rem; */
+}
+
+.features-title .highlight {
+    color: #22d3ee;
+    /* cyan highlight */
+}
+
+.features-grid {
+    display: grid;
+    gap: 2rem;
+    margin: 2rem;
+    
+}
+
+
+.feature-card {
+    width: 260px;
+    height: 240px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease,
+        border-color 0.25s ease;
+    backdrop-filter: blur(10px);
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+}
+
+.feature-header {
+    display: flex;
+    flex-direction: column;
+    /* stack icon + title */
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.feature-header h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* Glow Variants */
+.glow-cyan:hover {
+    border-color: #22d3ee;
+    box-shadow: 0 0 20px #22d3ee;
+}
+
+.glow-blue:hover {
+    border-color: #3b82f6;
+    box-shadow: 0 0 20px #3b82f6;
+}
+
+.glow-purple:hover {
+    border-color: #a855f7;
+    box-shadow: 0 0 20px #a855f7;
+}
+
+.glow-teal:hover {
+    border-color: #14b8a6;
+    box-shadow: 0 0 20px #14b8a6;
+}
+
+.feature-card p {
+    font-size: 0.85rem;
+    color: #d1d5db;
+    line-height: 1.4;
+    max-width: 200px;
+    /* control text width */
+}
+
+@media (min-width: 768px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

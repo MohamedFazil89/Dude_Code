@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.Dude-Title {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    font-size: 2rem;
+    padding: 3rem;
+
+}
+
+.Dude-Container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.dude-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+.Dude-Title span {
+    color: #00C1FF;
+}
+
+.Video-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    gap: 1rem;
+    text-align: right;
+
+}
+
+.Video-title p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+
+}
+
+.Dude-Content {
+    text-align: center;
+    width: 100%;
+    margin-left: 5rem;
+
+}
+
+.Dude-Content p {
+    font-size: 1.2rem;
+    width: 80%;
+}
+
+.Dude-Content p span {
+    color: #00C1FF;
+}
+
+.Dude-Content button{
+    all: unset;
+    margin: 1rem;
+    all: unset;
+    background-color: #00C1FF;
+    padding: 15px 50px;
+    border-radius: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    filter: drop-shadow(0 0 5px #00c1ff);
+    cursor: pointer;
+    margin-top: 3rem;
+    margin-right: 5rem;
+    color: black;
+}
+
+
+/* Responsive for tablets */
+@media (max-width: 1024px) {
+    .Dude-Title {
+        font-size: 1.8rem;
+        padding: 2rem;
+    }
+
+    .Video-title p {
+        font-size: 1.3rem;
+    }
+
+    .Dude-Content p {
+        font-size: 1rem;
+        width: 90%;
+        margin-left: 2rem;
+    }
+
+    .Dude-Content button {
+        padding: 12px 40px;
+        font-size: 1rem;
+        margin-right: 2rem;
+    }
+}
+
+/* Responsive for smaller tablets and large phones */
+@media (max-width: 768px) {
+    .dude-body {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .Video-title {
+        text-align: center;
+        margin: 1rem;
+    }
+
+    .Dude-Content {
+        margin-left: 0;
+    }
+
+    .Dude-Content p {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .Dude-Content button {
+        margin: 2rem 0;
+    }
+}
+
+/* Responsive for phones */
+@media (max-width: 480px) {
+    .Dude-Title {
+        font-size: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .Video-title p {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .Video-title iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .Dude-Content p {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .Dude-Content button {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.NavBar-Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+.NavBar-Left {
+    display: flex;
+    align-items: center;
+}
+
+.NavBar-Left .logo {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.NavBar-Left .brand-name {
+    font-weight: bold;
+    color: #00aaff;
+    font-size: 1.2rem;
+}
+
+.NavBar-Center {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.NavBar-Center li {
+    margin: 0 15px;
+    cursor: pointer;
+    color: white;
+    transition: color 0.2s ease-in-out;
+}
+
+
+
+.NavBar-Center li:hover {
+    color: #00aaff;
+}
+
+.NavBar-Center .active {
+    color: #00aaff;
+    border-bottom: 2px solid #00aaff;
+    padding-bottom: 2px;
+}
+
+.NavBar-Right {
+    width: 100px; /* Reserve space so alignment stays consistent */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .NavBar-Container {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .NavBar-Center {
+        position: static;
+        transform: none;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .NavBar-Right {
+        display: none;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 449px) {
+    .NavBar-Container {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .NavBar-Center {
+        position: static;
+        transform: none;
+        margin-top: 10px;
+        font-size: 0.8rem;
+    }
+
+   
+    .NavBar-Right {
+        display: none;
+    }
+}
