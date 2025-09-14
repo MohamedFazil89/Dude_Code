@@ -1,0 +1,22 @@
+{
+  "name": "dudecode",
+  "version": "1.0.0",
+  "description": "dude code is an dev tool automation combain with AI",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MohamedFazil89/Dude_Code.git"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "Fazil, Zaheer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MohamedFazil89/Dude_Code/issues"
+  },
+  "homepage": "https://github.com/MohamedFazil89/Dude_Code#readme"
+}

@@ -40,7 +40,7 @@ export default function KeyFeatures() {
         {features.map((f, i) => (
           <div key={i} className={`feature-card glow-${f.glow}`}>
             <div className="feature-header">
-              {f.icon}
+              <img src={f.icon} alt="" />
               <h3>{f.title}</h3>
             </div>
             <p>{f.desc}</p>

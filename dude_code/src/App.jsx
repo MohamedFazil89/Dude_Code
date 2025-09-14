@@ -7,17 +7,17 @@ import Card from "./Components/Pages/Card"
 function App() {
   return (
     <div className="App">
-      <NavBar />
+      <NavBar page="Home" />
       <Hero />
       <br></br>
       <br></br>
       <Dude />
-       <br></br>
+      <br></br>
       <br></br> <br></br>
       <br></br>
       <Card />
 
-         </div>
+    </div>
   );
 }
 

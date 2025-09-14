@@ -50,16 +50,18 @@
     transform: translateX(-50%);
 }
 
-.NavBar-Center li {
+.NavBar-Center li a {
     margin: 0 15px;
     cursor: pointer;
     color: white;
     transition: color 0.2s ease-in-out;
+    text-decoration: none;
+
 }
 
 
 
-.NavBar-Center li:hover {
+.NavBar-Center li a:hover {
     color: #00aaff;
 }
 
